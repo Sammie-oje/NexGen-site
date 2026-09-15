@@ -1,0 +1,64 @@
+@import "tailwindcss";
+/*Primitives - value-named */
+@theme {
+  --color-orange-60: oklch(76.8% 0.113 97.4);
+  --color-orange-65: oklch(80.2% 0.098 97.7);
+  --color-orange-70: oklch(83.4% 0.084 97.8);
+  --color-orange-80: oklch(89.4% 0.056 98.4);
+  --color-orange-90: oklch(94.2% 0.029 98.6);
+  --color-orange-95: oklch(97.2% 0.014 99);
+  --color-orange-97: oklch(98.3% 0.008 99.3);
+  --color-orange-99: oklch(99.4% 0.003 125.6);
+
+  --color-neutral-06: oklch(16.8% 0 0);
+  --color-neutral-10: oklch(21.78% 0 0);
+  --color-neutral-12: oklch(23.9% 0 0);
+  --color-neutral-15: oklch(26.9% 0 0);
+  --color-neutral-20: oklch(32.1% 0 0);
+  --color-neutral-25: oklch(37.1% 0 0);
+  --color-neutral-30: oklch(42% 0 0);
+  --color-neutral-35: oklch(46.4% 0 0);
+
+  --color-neutral-40: oklch(51.1% 0.002 67.8);
+  --color-neutral-50: oklch(60% 0.003 84.6);
+  --color-neutral-70: oklch(76.6% 0.001 106.4);
+  --color-neutral-80: oklch(84% 0.006 286.3);
+  --color-neutral-90: oklch(92.5% 0 0);
+  --color-neutral-95: oklch(96.1% 0 0);
+  --color-neutral-97: oklch(97.6% 0 0);
+  --color-neutral-99: oklch(99.1% 0 0);
+
+  /*Spacing primitives- padding, margin, gap*/
+  --spacing-1: 0.625rem; /*10px*/
+  --spacing-2: 0.75rem; /*12px*/
+  --spacing-3: 0.875rem; /*14px*/
+  --spacing-4: 1rem; /*16px*/
+  --spacing-5: 1.25rem; /*20px*/
+  --spacing-6: 1.5rem; /*24px*/
+  --spacing-7: 1.75rem; /*28px*/
+  --spacing-8: 2rem; /*32px*/
+  --spacing-10: 2.5rem; /*40px*/
+  --spacing-12: 3rem; /*48px*/
+  --spacing-14: 3.5rem; /*56px*/
+  --spacing-20: 5rem; /*80px*/
+  --spacing-24: 6rem; /*96px*/
+  --spacing-36: 9rem; /*144px*/
+  --spacing-44: 11rem; /*176px*/
+
+  /*Border-radius*/
+  --radius-1: 0.5rem; /*8px*/
+  --radius-2: 0.75rem; /*12px*/
+  --radius-3: 1rem; /*16px*/
+  --radius-pill: 9999px;
+
+  /*Typography*/
+}
+
+:root {
+  --page-background: var(--color-neutral-12);
+  --element-background: var(--color-neutral-10);
+
+  --radius-container: var(--radius-3);
+  --radius-card: var(--radius-2);
+  --radius-button: var(--radius-1);
+}
