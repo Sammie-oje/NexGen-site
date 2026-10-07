@@ -1,5 +1,5 @@
 import Menu from "../ui/Menu.jsx";
-import Logo from "../ui/Logo.jsx";
+import Logo from "../../assets/images/logo.svg?react";
 
 function NavBar() {
   return (
@@ -8,7 +8,7 @@ function NavBar() {
         backgroundColor: "var(--element-background)",
         borderRadius: "var(--radius-button)",
       }}
-      className="flex justify-between align-center p-3"
+      className="flex justify-between items-center p-3 mb-5"
     >
       <Logo />
       <Menu />

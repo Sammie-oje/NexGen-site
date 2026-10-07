@@ -1,9 +1,34 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: RobotoFlex;
+  font-display: swap;
+  font-weight: 200 900;
+  font-style: normal;
+  src:
+    local(
+      "RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght"
+    ),
+    url("./assets/fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: RobotoMono;
+  font-display: swap;
+  font-weight: 200 900;
+  font-style: normal;
+  src:
+    local("RobotoMono-VariableFont_wght"),
+    url("./assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf")
+      format("truetype");
+}
+
 /*Primitives - value-named */
 @theme {
   --color-orange-60: oklch(76.8% 0.113 97.4);
   --color-orange-65: oklch(80.2% 0.098 97.7);
-  --color-orange-70: oklch(83.4% 0.084 97.8);
+  --color-orange-70: oklch(84.58% 0.0872 99.29);
   --color-orange-80: oklch(89.4% 0.056 98.4);
   --color-orange-90: oklch(94.2% 0.029 98.6);
   --color-orange-95: oklch(97.2% 0.014 99);
@@ -52,13 +77,24 @@
   --radius-pill: 9999px;
 
   /*Typography*/
+  --font-roboto-mono: "RobotoMono", sans-serif;
+  --font-roboto-flex: "RobotoFlex", sans-serif;
 }
 
+/*Semantics - purpose-named*/
 :root {
-  --page-background: var(--color-neutral-12);
+  --page-background: var(--color-neutral-06);
   --element-background: var(--color-neutral-10);
 
   --radius-container: var(--radius-3);
   --radius-card: var(--radius-2);
   --radius-button: var(--radius-1);
+
+  --padding-card: var(--spacing-6);
+  --padding-card-small: var(--spacing-3);
+  --padding-card-large: var(--spacing-8);
+
+  --cards-gap: var(--spacing-1);
+  --card-inner-gap: var(--spacing-5);
+  --gap-connected: calc(var(--spacing-1) - 2px);
 }
