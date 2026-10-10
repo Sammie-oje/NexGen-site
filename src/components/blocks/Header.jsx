@@ -25,10 +25,10 @@ function Stat({ label, value }) {
 
 function Header() {
   return (
-    <header className="flex flex-col gap-4">
+    <header className="flex flex-col gap-4 mb-12">
       <Hero />
 
-      <CardContainer>
+      <CardContainer column={2}>
         {STATS.map((stat) => (
           <Card type={"small"} key={stat.label}>
             <Stat label={stat.label} value={stat.value} />
