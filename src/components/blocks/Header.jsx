@@ -25,7 +25,7 @@ function Stat({ label, value }) {
 
 function Header() {
   return (
-    <header className="flex flex-col gap-4 mb-12">
+    <header className="flex flex-col gap-4 ">
       <Hero />
 
       <CardContainer column={2}>

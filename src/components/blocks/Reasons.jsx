@@ -44,7 +44,7 @@ function Reason({ title, text }) {
 
 function Reasons() {
   return (
-    <CardContainer className="flex flex-col ">
+    <CardContainer styles="mt-12">
       <Card>
         <h2 className="uppercase font-roboto-flex text-orange-95 text-[28px] font-semibold">
           Reasons to choose NexGen for your digital journey
