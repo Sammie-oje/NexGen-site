@@ -16,7 +16,7 @@ const SERVICES = [
     title: "Mobile app development",
     bid: 2500,
     image: <SmartPhone />,
-    text: "With our Mobile App Development ssrvice, we harness the power of mobile technology to create cutting-edge applications.",
+    text: "With our Mobile App Development service, we harness the power of mobile technology to create cutting-edge applications.",
   },
   {
     title: "Web development",
@@ -67,7 +67,7 @@ function Services() {
   return (
     <CardContainer styles="mt-12">
       <Card>
-        <h2 className="uppercase font-roboto-flex text-orange-95 text-[28px] text-left font-semibold">
+        <h2 className="uppercase font-roboto-flex text-orange-95 text-[28px] text-left font-semibold w-full">
           Our services
         </h2>
       </Card>
