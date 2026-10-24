@@ -1,5 +1,6 @@
 const variants = {
   small: "p-[var(--padding-card-small)]",
+  large: "p-[var(--padding-card-large)]",
   default: "p-[var(--padding-card)]",
 };
 

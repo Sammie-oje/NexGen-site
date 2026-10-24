@@ -3,6 +3,7 @@ import Reasons from "../components/blocks/Reasons.jsx";
 import Services from "../components/blocks/Services.jsx";
 import Works from "../components/blocks/Works.jsx";
 import Testimonials from "../components/blocks/Testimonials.jsx";
+import FAQ from "../components/blocks/FAQ.jsx";
 
 function Home(params) {
   return (
@@ -11,11 +12,10 @@ function Home(params) {
       <Reasons />
       <Services />
       <Works />
-      <Testimonials/>
+      <Testimonials />
+      <FAQ />
     </>
   );
 }
 
 export default Home;
-
-
