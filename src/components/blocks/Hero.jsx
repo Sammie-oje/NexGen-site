@@ -2,6 +2,14 @@ import Card from "../ui/Card.jsx";
 import Ticker from "../ui/Ticker.jsx";
 import { ArrowRight } from "lucide-react";
 
+const TICKER_TEXTS = [
+  "Branding",
+  "Digital Marketing",
+  "App development",
+  "Web development",
+  "Web design",
+];
+
 function Hero() {
   return (
     <section>
@@ -22,7 +30,7 @@ function Hero() {
           solutions.Our teams of experts to helping businesses like yours thrive
           in the fast-paced digital landscape
         </p>
-        <Ticker />
+        <Ticker styles="bg-neutral-06 absolute w-[calc(100%_-_3rem)]" texts={TICKER_TEXTS} />
       </Card>
     </section>
   );
