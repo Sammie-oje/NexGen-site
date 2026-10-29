@@ -9,6 +9,7 @@ function NavBar() {
         borderRadius: "var(--radius-button)",
       }}
       className="flex justify-between items-center p-3 mb-5"
+      aria-label="Header navigation"
     >
       <Logo />
       <Menu />

@@ -1,6 +1,7 @@
 import CTASection from "../ui/CTASection.jsx";
 import Ticker from "../ui/Ticker.jsx";
 import Socials from "../ui/Socials.jsx";
+import FooterLinks from "../ui/FooterLinks.jsx";
 import Card from "../ui/Card.jsx";
 
 const TICKER_TEXTS = [
@@ -17,6 +18,7 @@ function Footer() {
       <CTASection />
       <Ticker styles="bg-neutral-10 w-full" texts={TICKER_TEXTS} />
       <Socials />
+      <FooterLinks />
     </footer>
   );
 }
