@@ -46,7 +46,14 @@ function Links({ header, links }) {
       </h3>
       <ul className="flex flex-col gap-1 font-regular font-roboto-flex text-[14px] text-neutral-50">
         {links.map(({ name, status }) => (
-          <li>{name}</li>
+          <li className="flex items-center gap-(--gap-connected)">
+            <span>{name}</span>
+            {status !== "active" && (
+              <span className="bg-neutral-15 px-1 py-[4px] border border-neutral-20 text-[12px] font-roboto-flex font-regular text-neutral-80 rounded-1">
+                Soon
+              </span>
+            )}
+          </li>
         ))}
       </ul>
     </div>
