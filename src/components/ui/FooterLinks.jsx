@@ -32,7 +32,6 @@ const FOOTER_LINKS = [
     header: "Blogs",
     links: [
       { name: "Business", status: "active" },
-
       { name: "Design", status: "inactive" },
       { name: "Development", status: "inactive" },
     ],
