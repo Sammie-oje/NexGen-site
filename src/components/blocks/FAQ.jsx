@@ -32,7 +32,7 @@ const FAQS = [
 
 const INPUT_NAMES = [
   { label: "Name", placeholder: "Enter your name", type: "text" },
-  { label: "Email", placeholder: "Enter your email", type: "Email" },
+  { label: "Email", placeholder: "Enter your email", type: "email" },
   {
     label: "Your question",
     placeholder: "Enter your question here ……",
