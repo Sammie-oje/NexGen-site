@@ -1,0 +1,16 @@
+/*Spacing primitives- padding, margin, gap*/
+  --spacing-1: 0.625rem; /*10px*/
+  --spacing-2: 0.75rem; /*12px*/
+  --spacing-3: 0.875rem; /*14px*/
+  --spacing-4: 1rem; /*16px*/
+  --spacing-5: 1.25rem; /*20px*/
+  --spacing-6: 1.5rem; /*24px*/
+  --spacing-7: 1.75rem; /*28px*/
+  --spacing-8: 2rem; /*32px*/
+  --spacing-10: 2.5rem; /*40px*/
+  --spacing-12: 3rem; /*48px*/
+  --spacing-14: 3.5rem; /*56px*/
+  --spacing-20: 5rem; /*80px*/
+  --spacing-24: 6rem; /*96px*/
+  --spacing-36: 9rem; /*144px*/
+  --spacing-44: 11rem; /*176px*/

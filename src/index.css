@@ -25,16 +25,18 @@
 }
 
 /*Primitives - value-named */
-@theme {
-  --color-orange-60: oklch(76.8% 0.113 97.4);
-  --color-orange-65: oklch(80.2% 0.098 97.7);
-  --color-orange-70: oklch(84.58% 0.0872 99.29);
-  --color-orange-80: oklch(89.4% 0.056 98.4);
-  --color-orange-90: oklch(94.2% 0.029 98.6);
-  --color-orange-95: oklch(97.2% 0.014 99);
-  --color-orange-97: oklch(98.3% 0.008 99.3);
-  --color-orange-99: oklch(99.4% 0.003 125.6);
+:root {
+  /*Yellow*/
+  --color-yellow-60: oklch(76.8% 0.113 97.4);
+  --color-yellow-65: oklch(80.2% 0.098 97.7);
+  --color-yellow-70: oklch(84.58% 0.0872 99.29);
+  --color-yellow-80: oklch(89.4% 0.056 98.4);
+  --color-yellow-90: oklch(94.2% 0.029 98.6);
+  --color-yellow-95: oklch(97.2% 0.014 99);
+  --color-yellow-97: oklch(98.3% 0.008 99.3);
+  --color-yellow-99: oklch(99.4% 0.003 125.6);
 
+  /*Neutral*/
   --color-neutral-06: oklch(16.8% 0 0);
   --color-neutral-10: oklch(21.78% 0 0);
   --color-neutral-12: oklch(23.9% 0 0);
@@ -43,7 +45,6 @@
   --color-neutral-25: oklch(37.1% 0 0);
   --color-neutral-30: oklch(42% 0 0);
   --color-neutral-35: oklch(46.4% 0 0);
-
   --color-neutral-40: oklch(51.1% 0.002 67.8);
   --color-neutral-50: oklch(60% 0.003 84.6);
   --color-neutral-70: oklch(76.6% 0.001 106.4);
@@ -53,48 +54,146 @@
   --color-neutral-97: oklch(97.6% 0 0);
   --color-neutral-99: oklch(99.1% 0 0);
 
-  /*Spacing primitives- padding, margin, gap*/
-  --spacing-1: 0.625rem; /*10px*/
-  --spacing-2: 0.75rem; /*12px*/
-  --spacing-3: 0.875rem; /*14px*/
-  --spacing-4: 1rem; /*16px*/
-  --spacing-5: 1.25rem; /*20px*/
-  --spacing-6: 1.5rem; /*24px*/
-  --spacing-7: 1.75rem; /*28px*/
-  --spacing-8: 2rem; /*32px*/
-  --spacing-10: 2.5rem; /*40px*/
-  --spacing-12: 3rem; /*48px*/
-  --spacing-14: 3.5rem; /*56px*/
-  --spacing-20: 5rem; /*80px*/
-  --spacing-24: 6rem; /*96px*/
-  --spacing-36: 9rem; /*144px*/
-  --spacing-44: 11rem; /*176px*/
-
   /*Border-radius*/
-  --radius-1: 0.5rem; /*8px*/
-  --radius-2: 0.75rem; /*12px*/
-  --radius-3: 1rem; /*16px*/
-  --radius-pill: 9999px;
+  --radius-8: 0.5rem; /*8px*/
+  --radius-12: 0.75rem; /*12px*/
+  --radius-16: 1rem; /*16px*/
+  --radius-full: 9999px;
 
   /*Typography*/
-  --font-roboto-mono: "RobotoMono", sans-serif;
-  --font-roboto-flex: "RobotoFlex", sans-serif;
+  --font-family-roboto-mono: "RobotoMono", ui-sans-serif, system-ui, sans-serif;
+  --font-family-roboto-flex: "RobotoFlex", ui-monospace, "SF Mono", monospace;
+
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-28: 1.75rem;
+  --font-size-40: 2.5rem;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --line-height-150: 1.5;
+}
+
+@theme {
+  --color-*: initial;
+  --radius-*: initial;
+  --text-*: initial;
+  --font-weight-*: initial;
 }
 
 /*Semantics - purpose-named*/
-:root {
+@theme inline {
   --page-background: var(--color-neutral-06);
   --element-background: var(--color-neutral-10);
 
-  --radius-container: var(--radius-3);
-  --radius-card: var(--radius-2);
-  --radius-button: var(--radius-1);
+  --spacing-tight: 0.5rem; /* 8 — icon↔label, label↔field, title↔text*/
+  --spacing-gutter: 0.625rem; /* 10 — between cards, CardGroup inset*/
+  --spacing-stack: 1.25rem; /* 20 — vertical rhythm inside a card */
+  --spacing-card-sm: 0.875rem; /* 14 — Card padding sm; Ticker padding */
+  --spacing-card: 1.5rem; /* 24 — Card padding (default) */
+  --spacing-card-lg: 2rem; /* 32 — Card padding lg */
+  --spacing-section: 3rem; /* 48 — vertical gap between page sections */
+  --spacing-page: 1rem; /* 16 — page side gutter */
 
-  --padding-card: var(--spacing-6);
-  --padding-card-small: var(--spacing-3);
-  --padding-card-large: var(--spacing-8);
+  --radius-control: var(--radius-8); /*For buttins, inputs*/
+  --radius-tile: var(--radius-8); /*For tiles and navs*/
+  --radius-card: var(--radius-12); /*For Card*/
+  --radius-container: var(--radius-16); /*For CardGroup*/
+  --radius-pill: var(--radius-full); /*circles, chips, dots*/
 
-  --cards-gap: var(--spacing-1);
-  --card-inner-gap: var(--spacing-5);
-  --gap-connected: calc(var(--spacing-1) - 2px);
+  --font-sans: var(--font-family-roboto-flex);
+  --font-mono: var(--font-family-roboto-mono);
+}
+
+/*TYPOGRAPHY ROLES
+   One class per role = font-family + size + weight + line-height. Color is a different utility
+*/
+:root {
+  --type-leading-heading: var(--line-height-150);
+  --type-leading-copy: var(--line-height-150);
+}
+
+@utility type-figure {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-40);
+  font-weight: var(--weight-semibold);
+  line-height: var(--type-leading-heading);
+}
+@utility type-display {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-28);
+  font-weight: var(--weight-semibold);
+  line-height: var(--type-leading-heading);
+}
+@utility type-title {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-20);
+  font-weight: var(--weight-medium);
+  line-height: var(--type-leading-heading);
+}
+@utility type-subtitle {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-18);
+  font-weight: var(--weight-medium);
+  line-height: var(--type-leading-heading);
+}
+@utility type-label {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-16);
+  font-weight: var(--weight-medium);
+  line-height: var(--type-leading-heading);
+}
+@utility type-body-lg {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-16);
+  font-weight: var(--weight-regular);
+  line-height: var(--type-leading-copy);
+}
+@utility type-body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-14);
+  font-weight: var(--weight-regular);
+  line-height: var(--type-leading-copy);
+}
+@utility type-button {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-14);
+  font-weight: var(--weight-medium);
+  line-height: var(--type-leading-heading);
+}
+@utility type-caption {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-regular);
+  line-height: var(--type-leading-copy);
+}
+@utility type-caption-strong {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-medium);
+  line-height: var(--type-leading-copy);
+}
+@utility type-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-14);
+  font-weight: var(--weight-regular);
+  line-height: var(--type-leading-copy);
+}
+@utility type-action {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-14);
+  font-weight: var(--weight-medium);
+  line-height: var(--type-leading-copy);
+}
+@utility type-heading-mono {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-18);
+  font-weight: var(--weight-bold);
+  line-height: var(--type-leading-heading);
 }
