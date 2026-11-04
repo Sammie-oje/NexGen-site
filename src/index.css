@@ -89,8 +89,37 @@
 
 /*Semantics - purpose-named*/
 @theme inline {
-  --page-background: var(--color-neutral-06);
-  --element-background: var(--color-neutral-10);
+  /* ---- Surfaces → bg-* ---- */
+  --color-page: var(--color-neutral-06); /*<body>, nav buttons*/
+  --color-surface: var(--color-neutral-10); /*Card*/
+  --color-raised: var(--color-neutral-12); /*tiles, chips, circle buttons*/
+  --color-raised-strong: var(--color-neutral-15); /*badges, hover-on-raised*/
+  --color-inset: var(
+    --color-neutral-06
+  ); /*fields, inset circles, datk buttons*/
+  --color-accent: var(--color-yellow-60); /*primary fill, dots, accent card*/
+  --color-accent-light: var(--color-yellow-90); /*light button fill*/
+  --color-avatar: var(--color-orange-60); /*avatar backdrop*/
+
+  /* ---- Lines → border-*, divide-*, outline-* ---- */
+  --color-frame: var(--color-neutral-12); /* CardGroup outline */
+  --color-divider: var(--color-neutral-15); /* <hr>, inset circle border */
+  --color-stroke: var(--color-neutral-20); /* control borders */
+
+  /* ---- Text & icons → text-* ---- */
+  --color-heading: var(--color-yellow-95); /* headings, titles */
+  --color-emphasis: var(--color-yellow-90); /* labels, names, strong UI text */
+  --color-highlight: var(--color-yellow-70); /* big figures */
+  --color-action: var(
+    --color-yellow-80
+  ); /* icons in circles, accent link label */
+  --color-body: var(--color-neutral-70); /* paragraphs, secondary labels */
+  --color-muted: var(--color-neutral-50); /* tertiary: nav links, meta*/
+  --color-subtle: var(--color-neutral-40); /* placeholders, ticker, hero copy */
+  --color-on-accent: var(
+    --color-neutral-06
+  ); /* text on accent / accent-light */
+  --color-on-accent-muted: var(--color-neutral-15);
 
   --spacing-tight: 0.5rem; /* 8 — icon↔label, label↔field, title↔text*/
   --spacing-gutter: 0.625rem; /* 10 — between cards, CardGroup inset*/
