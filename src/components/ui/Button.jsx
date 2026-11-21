@@ -1,3 +1,5 @@
+import cn from "../../lib.js"
+
 const variants = {
   "highlight": "",
   "default":"",
