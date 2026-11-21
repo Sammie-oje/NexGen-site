@@ -1,16 +1,19 @@
 import { ListSortDescending } from "lucide-react";
 
-function Menu() {
+function Menu(props) {
   return (
     <button
-      className="size-10 p-1 flex align-center justify-center"
-      style={{
-        backgroundColor: "var(--page-background)",
-        borderRadius: "var(--radius-button)",
-      }}
+      type="button"
+      aria-label="Open menu"
+      className="size-10 flex items-center justify-center rounded-control bg-page"
+      {...props}
     >
-      <ListSortDescending className="scale-x-[-1] text-white" size={24} />
+      <ListSortDescending
+        aria-hidden
+        className="size-6 scale-x-[-1] text-heading"
+      />
     </button>
   );
 }
 export default Menu;
+
