@@ -7,7 +7,7 @@ export function Tag({ label, value }) {
         {label}
       </Text>
       <span aria-hidden className="size-2 bg-accent rounded-pill" />
-      <Text as="span" variant="caption-strong">
+      <Text as="span" variant="caption-strong" tone="strong">
         {value}
       </Text>
     </div>

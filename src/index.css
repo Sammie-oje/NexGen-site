@@ -113,6 +113,8 @@
   --color-action: var(
     --color-yellow-80
   ); /* icons in circles, accent link label */
+  --color-strong: var(--color-neutral-90); /*tag values*/
+  --color-body-strong: var(--color-neutral-80); /*badges and labels*/
   --color-body: var(--color-neutral-70); /* paragraphs, secondary labels */
   --color-muted: var(--color-neutral-50); /* tertiary: nav links, meta*/
   --color-subtle: var(--color-neutral-40); /* placeholders, ticker, hero copy */

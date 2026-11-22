@@ -35,6 +35,8 @@ const TONES = {
   highlight: "text-highlight",
   action: "text-action",
   body: "text-body",
+  strong: "text-strong",
+  "body-strong": "text-body-strong",
   muted: "text-muted",
   subtle: "text-subtle",
   "on-accent": "text-on-accent",
