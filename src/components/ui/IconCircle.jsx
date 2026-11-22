@@ -3,8 +3,7 @@ import { cn } from "../../lib.js";
 const TONES = {
   raised: "bg-raised border border-stroke text-action",
   inset: "bg-inset border border-divider text-action",
-  accent:
-    "bg-on-accent text-on-accent outline-2 outline-offset-4 outline-accent",
+  accent: "bg-accent text-on-accent outline-2 outline-offset-4 outline-accent",
 };
 
 const SIZES = {
@@ -25,7 +24,7 @@ function IconCircle({
     <Tag
       className={cn(
         "flex shrink-0 items-center justify-center rounded-pill",
-        TONES[tones],
+        TONES[tone],
         SIZES[size],
         className,
       )}
@@ -38,4 +37,3 @@ function IconCircle({
 }
 
 export default IconCircle;
-
