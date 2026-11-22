@@ -5,7 +5,7 @@ const COLUMNS = {
   2: "grid-cols-2",
 };
 
-function CardContainer({
+function CardGroup({
   as: Tag = "section",
   columns = 1,
   children,
@@ -26,4 +26,4 @@ function CardContainer({
   );
 }
 
-export default CardContainer;
+export default CardGroup;

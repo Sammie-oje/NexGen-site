@@ -130,7 +130,7 @@
   --spacing-section: 3rem; /* 48 — vertical gap between page sections */
   --spacing-page: 1rem; /* 16 — page side gutter */
 
-  --radius-control: var(--radius-8); /*For buttins, inputs*/
+  --radius-control: var(--radius-8); /*For buttons, inputs*/
   --radius-tile: var(--radius-8); /*For tiles and navs*/
   --radius-card: var(--radius-12); /*For Card*/
   --radius-container: var(--radius-16); /*For CardGroup*/
