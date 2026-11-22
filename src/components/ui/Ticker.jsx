@@ -1,11 +1,37 @@
-function Ticker({ styles, texts }) {
+import { cn } from "../../lib/cn.js";
+import Text from "./Text.jsx";
+
+/*
+* Dot-separated strip of labels
+* tones : surface (on page) | inset (on Card)
+
+* Positioning should be from the outside e.g  <Ticker className="absolute inset-x-0 bottom-4"/>
+*/
+
+const TONES = {
+  surface: "bg-surface",
+  inset: "bg-inset",
+};
+
+function Ticker({ className, texts, tone = "surface" }) {
   return (
-    <div className={` bottom-4 ${styles}  rounded-1 p-3 overflow-x-hidden`}>
-      <div className="flex gap-(--gap-connected) w-max text-[14px] text-neutral-40 uppercase font-roboto-mono">
-        {texts.map((text) => (
-          <span className="relative pr-4 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:rounded-full after:size-[7px] after:bg-orange-60">
+    <div
+      className={cn(
+        "rounded-tile p-card-sm overflow-x-hidden",
+        TONES[tone],
+        className,
+      )}
+    >
+      <div className="flex gap-tight w-max ">
+        {texts.map((text, i) => (
+          <Text
+            key={`${text}-${i}`}
+            as="span"
+            variant="eyebrow"
+            className="relative pr-4 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:rounded-pill after:size-2 after:bg-accent"
+          >
             {text}
-          </span>
+          </Text>
         ))}
       </div>
     </div>
