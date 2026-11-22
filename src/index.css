@@ -108,7 +108,7 @@
 
   /* ---- Text & icons → text-* ---- */
   --color-heading: var(--color-yellow-95); /* headings, titles */
-  --color-emphasis: var(--color-yellow-90); /* labels, names, strong UI text */
+  --color-emphasis: var(--color-neutral-90); /* labels, names, strong UI text */
   --color-highlight: var(--color-yellow-70); /* big figures */
   --color-action: var(
     --color-yellow-80
