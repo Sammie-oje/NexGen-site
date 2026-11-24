@@ -1,25 +1,27 @@
-import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import Card from "./Card.jsx";
+import Divider from "./Divider.jsx";
+import IconCircle from "./IconCircle.jsx";
+import Text from "./Text.jsx"
 
-function Accordion({ question, answer }) {
+function Accordion({ question, answer, name = "faqs" }) {
   return (
-    <Card styles="px-8 py-6">
-      <details name="faqs">
-        <summary className=" list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center gap-5">
-          <span className="text-[18px] font-medium font-roboto-flex text-orange-95">
+    <Card padding="wide">
+      <details name={name} className="group">
+        <summary className="flex items-center gap-stack list-none cursor-pointer [&::-webkit-details-marker]:hidden">
+          <Text as="span" variant="subtitle" caps={false}>
             {question}
-          </span>
-          <div className="flex items-center p-1 bg-neutral-12 border-1 border-neutral-20 rounded-pill">
-            <Plus className="text-orange-80" />
-          </div>
+          </Text>
+
+          <IconCircle>
+            <Plus aria-hidden className="size-5 group-open:hidden" />
+            <Minus aria-hidden className="hidden size-5 group-open:block" />
+          </IconCircle>
         </summary>
 
-        <hr className="border border-neutral-15 w-full mt-5 mb-5" />
+        <Divider className="my-stack" />
 
-        <p className="text-[14px] font-roboto-flex font-regular text-neutral-70">
-          {answer}
-        </p>
+        <Text>{answer}</Text>
       </details>
     </Card>
   );

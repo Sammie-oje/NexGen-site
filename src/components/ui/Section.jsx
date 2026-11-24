@@ -15,7 +15,11 @@ function Section({ title, framed = "true", columns = 1, children, ...props }) {
 
   if (!framed) {
     return (
-      <section className="flex flex-col gap-gutter" aria-labelledby={titleId} {...props}>
+      <section
+        className="flex flex-col gap-gutter"
+        aria-labelledby={titleId}
+        {...props}
+      >
         {heading}
         {children}
       </section>
