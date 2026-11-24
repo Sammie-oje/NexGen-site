@@ -1,13 +1,30 @@
-import cn from "../../lib.js"
+import cn from "../../lib/cn.js";
 
-const variants = {
-  "highlight": "",
-  "default":"",
-   
-}
+const VARIANTS = {
+  accent: "bg-accent text-on-accent",
+  light: "bg-accent-light text-on-accent",
+  dark: "bg-inset text-emphasis",
+};
 
-function Button({ children, className, ...props }) {
-  <button {...props}>{children}</button>;
+function Button({
+  as: Tag = "button",
+  variant = "accent",
+  icon: Icon,
+  children,
+  className,
+  ...props
+}) {
+  <Tag
+    className={cn(
+      "uppercase flex items-center justify-center gap-tight rounded-control px-5 py-3.5",
+      VARIANTS[variant],
+      className,
+    )}
+    {...props}
+  >
+    {children}
+    {Icon && <Icon aria-hidden className="size-5 text-action" />}
+  </Tag>;
 }
 
 export default Button;
