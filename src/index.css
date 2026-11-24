@@ -96,7 +96,7 @@
   --color-raised-strong: var(--color-neutral-15); /*badges, hover-on-raised*/
   --color-inset: var(
     --color-neutral-06
-  ); /*fields, inset circles, datk buttons*/
+  ); /*fields, inset circles, dark buttons*/
   --color-accent: var(--color-yellow-60); /*primary fill, dots, accent card*/
   --color-accent-light: var(--color-yellow-90); /*light button fill*/
   --color-avatar: var(--color-orange-60); /*avatar backdrop*/

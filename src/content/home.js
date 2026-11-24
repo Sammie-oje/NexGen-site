@@ -105,3 +105,59 @@ export const works = {
     },
   ],
 };
+
+export const faqs = {
+  title: "Frequently Asked Questions",
+  items: [
+    {
+      question: "How long does it take to complete a web development project?",
+      answer:
+        "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+    },
+    {
+      question: "Can you handle large-scale mobile-app development projects?",
+      answer:
+        "Yes, our team has the experience and resources to take on projects of any size. We plan carefully, scale our workflow to match your needs, and keep communication open so your project stays on track from start to finish.",
+    },
+    {
+      question: "Can you integrate third-party APIs into our mobile app?",
+      answer:
+        "Absolutely. We regularly integrate third-party services such as payment gateways, analytics, and authentication providers. Each integration is built securely and tested thoroughly to ensure it performs reliably within your app.",
+    },
+    {
+      question:
+        "How do you ensure cross-platform compatibility for mobile apps?",
+      answer:
+        "We build with modern cross-platform frameworks and test across a wide range of devices, screen sizes, and operating systems. This helps us deliver a consistent, high-quality experience for every user, regardless of their platform.",
+    },
+    {
+      question: "What is your approach to user experience (UX) design?",
+      answer:
+        "We start by understanding your users and business goals, then design intuitive interfaces through research, wireframing, and prototyping. Every decision is validated with feedback so the final product is both easy to use and visually engaging.",
+    },
+  ],
+  form: {
+    title: "Ask your question",
+    submitLabel: "Send your message",
+    fields: [
+      {
+        name: "name",
+        label: "Name",
+        placeholder: "Enter your name",
+        type: "text",
+      },
+      {
+        name: "email",
+        label: "Email",
+        placeholder: "Enter your email",
+        type: "email",
+      },
+      {
+        name: "question",
+        label: "Your question",
+        placeholder: "Enter your question here ……",
+        type: "textarea",
+      },
+    ],
+  },
+};
