@@ -2,7 +2,7 @@ import { Plus, Minus } from "lucide-react";
 import Card from "./Card.jsx";
 import Divider from "./Divider.jsx";
 import IconCircle from "./IconCircle.jsx";
-import Text from "./Text.jsx"
+import Text from "./Text.jsx";
 
 function Accordion({ question, answer, name = "faqs" }) {
   return (

@@ -1,21 +1,24 @@
-import Header from "../components/blocks/Header.jsx";
+import Hero from "../components/blocks/Hero.jsx";
+import Stats from "../components/blocks/Stats.jsx";
 import Reasons from "../components/blocks/Reasons.jsx";
 import Services from "../components/blocks/Services.jsx";
 import Works from "../components/blocks/Works.jsx";
 import Testimonials from "../components/blocks/Testimonials.jsx";
 import FAQ from "../components/blocks/FAQ.jsx";
-import Footer from "../components/blocks/Footer.jsx";
+import * as content from "../content/home.js";
 
 function Home(params) {
   return (
     <>
-      <Header />
-      <Reasons />
-      <Services />
-      <Works />
-      <Testimonials />
-      <FAQ />
-      <Footer />
+      <header>
+        <Hero {...content.hero} />
+        <Stats {...content.stats} />
+      </header>
+      <Reasons {...content.reasons} />
+      <Services {...content.services} />
+      <Works {...content.works} />
+      <Testimonials {...content.testimonials} />
+      <FAQ {...content.faq} />
     </>
   );
 }
